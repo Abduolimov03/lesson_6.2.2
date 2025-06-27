@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Komediya Kinolari</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        .top-bar {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        .top-bar a {
+            text-decoration: none;
+            color: white;
+            background-color: #1a73e8;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .top-bar a:hover {
+            background-color: #155ac1;
+        }
+
+        header {
+            background-color: #ff9800;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .movie-list {
+            max-width: 900px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        .movie {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .movie-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        .movie-year {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .movie-desc {
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔙 Bosh sahifaga qaytish -->
+    <div class="top-bar">
+        <a href="{% url 'home' %}">Bosh sahifa</a>
+    </div>
+
+    <!-- Sarlavha -->
+    <header>
+         Komediya Kinolari
+    </header>
+
+    <!-- Kinolar ro'yxati -->
+    <div class="movie-list">
+        <div class="movie">
+            <div class="movie-title">Kelgindi Kuyov</div>
+            <div class="movie-year">2022</div>
+            <div class="movie-desc">
+                Qishloqqa kelin keladigan kuyovning kulgili sarguzashtlari. Oila, madaniyat va mehr-muhabbat haqidagi yumoristik film.
+            </div>
+        </div>
+
+        <div class="movie">
+            <div class="movie-title">Super Qaynona</div>
+            <div class="movie-year">2023</div>
+            <div class="movie-desc">
+                Zamonaviy kelin va an’anaviy qaynona o‘rtasidagi kulgili mojarolar, sevgi va tushunish haqida komediya.
+            </div>
+        </div>
+
+        <div class="movie">
+            <div class="movie-title">Qaynona Rules</div>
+            <div class="movie-year">2021</div>
+            <div class="movie-desc">
+                O‘zbek va xorijiy mentalitetlar to‘qnashuvi — sizni kuldirib yuboradigan voqealar bilan to‘la!
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

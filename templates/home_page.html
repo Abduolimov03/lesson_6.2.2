@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinolar Sayti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin: 50px auto;
+            max-width: 600px;
+        }
+
+        .menu a {
+            background-color: #1a73e8;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #155ac1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sarlavha -->
+    <header>
+        🎬 Kinolar saytiga xush kelibsiz!
+    </header>
+
+    <!-- Bo‘limlar menyusi -->
+    <div class="menu">
+        <a href="{% url 'jahon_kinolari' %}"> Jahon Kinolari</a>
+        <a href="{% url 'uzbek_kinolari' %}">O‘zbekiston Kinolari</a>
+        <a href="{% url 'komediya' %}"> Komediya</a>
+        <a href="{% url 'jangari' %}"> Jangari</a>
+        <a href="{% url 'drama' %}"> Drama</a>
+        <a href="{% url 'fantastika' %}"> Fantastika</a>
+    </div>
+
+</body>
+</html>

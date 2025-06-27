@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Jangari Kinolar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+
+        .top-bar {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        .top-bar a {
+            text-decoration: none;
+            color: white;
+            background-color: #1a73e8;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .top-bar a:hover {
+            background-color: #155ac1;
+        }
+
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .movie-list {
+            max-width: 900px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        .movie {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .movie-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        .movie-year {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .movie-desc {
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔙 Bosh sahifaga qaytish -->
+    <div class="top-bar">
+        <a href="{% url 'home' %}">Bosh sahifa</a>
+    </div>
+
+    <!-- Sarlavha -->
+    <header>
+         Jangari Kinolari
+    </header>
+
+    <!-- Kinolar ro‘yxati -->
+    <div class="movie-list">
+        <div class="movie">
+            <div class="movie-title">Baron</div>
+            <div class="movie-year">2016</div>
+            <div class="movie-desc">
+                Maxsus xizmat xodimi jinoyatchilikka qarshi kurashmoqda. Kuchli sahnalar va milliy ranglar bilan boyitilgan film.
+            </div>
+        </div>
+
+        <div class="movie">
+            <div class="movie-title">Taqdir O‘yini</div>
+            <div class="movie-year">2021</div>
+            <div class="movie-desc">
+                Yaqinlarini himoya qilish uchun kurashayotgan qahramon. Tezkor voqealar va kuchli dramatik syujet.
+            </div>
+        </div>
+
+        <div class="movie">
+            <div class="movie-title">Oxirgi Missiya</div>
+            <div class="movie-year">2023</div>
+            <div class="movie-desc">
+                Terrorizmga qarshi kurashuvchi jangchi oxirgi topshirig‘ini bajarishga kirishadi. Tashqi effektlarga boy film.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
